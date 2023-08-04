@@ -1,0 +1,102 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Issues";
+}
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+
+<h1>@ViewData["Title"]</h1>
+
+<br/><br/>
+
+<table>
+    <tr>
+        <td>
+            <p>Issue Title</p> 
+        </td>
+        <td>
+            <p>Issue Priority</p>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <input type="text" id="title_dp" disabled></input>
+        </td>
+        <td>
+            <select id="priority_dp" disabled>
+                <option></option>
+                <option>Low</option>
+                <option>Medium</option>
+                <option>High</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <p>Issue Description</p>
+        </td>
+        <td>
+            <p>Issue IssueType</p>
+        </td>
+    </tr>
+    <tr>
+        <td>
+
+            <textarea id="desc_dp" disabled></textarea>
+        </td>
+        <td>
+            <select id="type_dp" disabled>
+                <option></option>
+                <option>Feature</option>
+                <option>Bug</option>
+                <option>Documentation</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <p>Date Created</p>
+        </td>
+        <td>
+            <p>Date Completed</p>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <input id="creation_dp" type="datetime" disabled></input>
+        </td>
+        <td>
+            <input id="completed_dp" type="datetime" disabled></input>
+        </td>
+    </tr>
+</table>
+
+<br/><br/>
+
+<div>
+    <h2>Issue list</h2>
+</div>
+
+<table id="tblIssues">
+    <thead>
+        <tr>
+            <td>Issue Id</td>
+            <td>Issue Title</td>
+            <td>Actions</td>
+        </tr>
+    </thead>
+    <tbody></tbody>
+</table>
+
+<script type="text/javascript">
+    $(document).ready(function (){
+    
+    });
+
+    function GetAllIssues(){
+        
+    });
+
+</script>
+

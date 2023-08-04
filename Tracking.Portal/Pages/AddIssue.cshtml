@@ -1,0 +1,78 @@
+﻿@page
+@model AddIssueModel
+@{
+    ViewData["Title"] = "Add Issue";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<br/><br/>
+
+<table>
+    <tr>
+        <td>
+            <p>Issue Title</p> 
+        </td>
+        <td>
+            <p>Issue Priority</p>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <input type="text" id="title"></input>
+        </td>
+        <td>
+            <select id="priority">
+                <option>Low</option>
+                <option>Medium</option>
+                <option>High</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <p>Issue Description</p>
+        </td>
+        <td>
+            <p>Issue IssueType</p>
+        </td>
+    </tr>
+    <tr>
+        <td>
+
+            <textarea id="desc"></textarea>
+        </td>
+        <td>
+            <select id="type">
+                <option>Feature</option>
+                <option>Bug</option>
+                <option>Documentation</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <p>Date Created</p>
+        </td>
+        <td>
+            <p>Date Completed</p>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <input id="creation" type="datetime" disabled></input>
+        </td>
+        <td>
+            <input id="completed" type="datetime-local"></input>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <br/><br/>
+            <input type="submit" value="Submit"></input>
+            <input type="button" value="Clear"></input>
+            <input type="button" value="Back to List"></input>
+        </td>
+    </tr>
+</table>
+
